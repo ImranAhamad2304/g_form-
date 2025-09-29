@@ -1,0 +1,6 @@
+function onLoad() { 
+   //Type appropriate comment here, and begin script below 
+   var shortdescription = g_form.getValue('short_description'); 
+   if (shortdescription == ''){ 
+   g_form.setValue('short_description','No description provided'); 
+}} 
