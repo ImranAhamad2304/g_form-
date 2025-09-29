@@ -1,0 +1,11 @@
+function onChange(control, oldValue, newValue, isLoading) { 
+    if (isLoading || newValue == '') { 
+        return; 
+    } 
+    // Get the caller record 
+    var caller = g_form.getReference('caller_id', function(callerRecord) { 
+        if (callerRecord && callerRecord.location) { 
+            g_form.setValue('location', callerRecord.location); 
+       }  
+    }); 
+} 
