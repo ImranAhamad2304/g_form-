@@ -1,0 +1,13 @@
+function onChange(control, oldValue, newValue, isLoading, isTemplate) { 
+    if (isLoading || newValue === '') { 
+        return; 
+    } 
+    //Type appropriate comment here, and begin script below 
+    var category = g_form.getValue('category'); 
+    if (category == 'hardware') { 
+        g_form.setDisplay('u_asset', true); 
+    } else { 
+        g_form.setDisplay('u_asset', false); 
+    } 
+ 
+} 
