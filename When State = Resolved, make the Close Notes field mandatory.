@@ -1,0 +1,11 @@
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+   //Type appropriate comment here, and begin script below
+   var state = g_form.getValue('state');
+   if ( state == '6')
+   {
+	g_form.setMandatory('close_notes', true);
+   }
+   
