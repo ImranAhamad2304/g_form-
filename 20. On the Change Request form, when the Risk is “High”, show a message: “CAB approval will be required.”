@@ -1,0 +1,9 @@
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+   //Type appropriate comment here, and begin script below
+   var risk = g_form.getValue('risk');
+   if (risk == '2'){
+	alert('CAB approval will be required.');}
+   }
