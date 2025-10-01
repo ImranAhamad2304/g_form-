@@ -1,0 +1,13 @@
+Table : Change Request
+UI Type : All
+Type : Onload
+
+function onLoad() {
+    //Type appropriate comment here, and begin script below
+    g_form.setSectionDisplay('notes', false);
+    var assignedTo = g_form.getValue('assigned_to');
+    if (assignedTo == 'b9377c460b0131109dae8a8db777b295') {
+        g_form.setSectionDisplay('notes', true);
+    }
+
+}
