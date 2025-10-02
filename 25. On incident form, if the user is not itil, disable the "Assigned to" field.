@@ -1,0 +1,10 @@
+Table : Incident
+UI Type : ALL
+Type : on Load
+function onLoad() {
+   //Type appropriate comment here, and begin script below
+   g_form.setReadOnly('assigned_to',true);
+   if(g_user.hasRoleExactly('itil')){
+	g_form.setReadOnly('assigned_to',false);
+   }
+}
