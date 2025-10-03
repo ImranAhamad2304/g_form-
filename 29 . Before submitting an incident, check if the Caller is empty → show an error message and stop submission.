@@ -1,0 +1,11 @@
+Table : Incident
+UI Type : All
+Type : OnSubmit
+function onSubmit() {
+    //Type appropriate comment here, and begin script below
+	var callerID = g_form.getValue('caller_id');
+    if (callerID == '') {
+        g_form.addErrorMessage('Caller is Empty');
+        return false;
+    }
+}
