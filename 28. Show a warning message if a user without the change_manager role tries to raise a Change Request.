@@ -1,0 +1,10 @@
+Table : change_request
+UI Type : All
+Type : OnSubmit
+function onSubmit() { 
+    //Type appropriate comment here, and begin script below 
+    if (!(g_user.hasRoleExactly('change_manager'))) { 
+        g_form.addErrorMessage('Access Denied'); 
+        return false; 
+    } 
+} 
