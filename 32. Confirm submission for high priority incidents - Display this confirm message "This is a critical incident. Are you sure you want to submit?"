@@ -1,0 +1,11 @@
+Table : Incident
+UI Type : ALL
+Type : OnSubmit
+
+function onSubmit() { 
+   //Type appropriate comment here, and begin script below 
+   var priority = g_form.getValue('priority'); 
+   if ( priority == '2'){ 
+    confirm('This is a critical incident. Are you sure you want to submit'); 
+   } 
+} 
