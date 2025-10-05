@@ -1,0 +1,11 @@
+Table : Incident
+UI Type : ALL
+Type : OnLoad
+
+function onLoad() {
+   //Type appropriate comment here, and begin script below
+   var state = g_form.getValue('state');
+   if (state != '1'){
+	g_form.setDisabled('u_justification',true);
+   }
+}
