@@ -1,0 +1,11 @@
+Table : Incidnet
+UI Type : ALL
+Type : OnLoad
+
+function onLoad() { 
+    //Type appropriate comment here, and begin script below 
+    var state = g_form.getValue('state'); 
+    if (state == '6') { 
+        g_form.addErrorMessage('This Incident is already Resolved'); 
+    } 
+} 
