@@ -1,0 +1,12 @@
+Table : Incident
+UI Type : ALL
+Type : OnSubmit
+function onSubmit() {
+    //Type appropriate comment here, and begin script below
+    var impact = g_form.getValue('impact');
+    var justification = g_form.getValue(' u_justification');
+    if (impact == '1' && justification == '') {
+        confirm('Please provide a justification for high impact incidents.');
+        return false;
+    }
+}
