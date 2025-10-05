@@ -1,0 +1,15 @@
+Table : Incident
+UI Type : ALL
+Type : OnChange
+Field Name : Description
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+   //Type appropriate comment here, and begin script below
+   var description = g_form.getValue('description');
+   if (description.length > 200){
+	g_form.addErrorMessage('Description Should be less that 200 characters');
+   }   
+}
