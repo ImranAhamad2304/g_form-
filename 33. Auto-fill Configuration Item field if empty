@@ -1,0 +1,12 @@
+Table : Incident
+UI Type : ALL
+Type : OnLoad
+
+function onLoad() {
+   //Type appropriate comment here, and begin script below
+   var cI = g_form.getValue('cmdb_ci');
+   if(cI == '')
+   {
+	g_form.setValue('cmdb_ci','*ANNIE-IBM');
+   }
+}
