@@ -1,0 +1,9 @@
+Table : Incident
+UI Type : All
+Type : OnLoad
+function onLoad() { 
+   //Type appropriate comment here, and begin script below 
+   if (g_user.hasRoleExactly('itil')){ 
+    g_form.setDisplay('assignment_group',true); 
+   }else (g_form.setDisplay('assignment_group',false)); 
+} 
